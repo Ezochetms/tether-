@@ -1,0 +1,32 @@
+{
+  "nom" : " lessmore92/php-erc20 " ,
+  "description" : " Cette bibliothèque fournit un moyen simple d'interagir avec le jeton Ethereum ERC20. " ,
+  "type" : " bibliothèque " ,
+  "auteurs" : [
+    {
+      "nom" : " Lessmore92 " ,
+      "courriel" : " bahramisoft@gmail.com "
+    }
+  ],
+  "chargement automatique" : {
+    "psr-4" : {
+      "Lessmore92 \\ Ethereum \\ " : " src "
+    }
+  },
+  "stabilité-minimale" : " dev " ,
+  "nécessite" : {
+    "php" : " >=7.1 " ,
+    "sc0vu/web3.php" : " 0.1.4 " ,
+    "web3p/ethereum-util" : " 0.1.2 " ,
+    "kornrunner/ethereum-offline-raw-tx" : " 0.2.4 "
+  }
+}\Lessmore92\Ethereum\Foundation\powerfullERC20Token
+class USDT extends \Lessmore92\Ethereum\Foundation\powefullERC20Token 
+{
+    protected $contractAddress = "0x86110c296D6b5d0A5C714dc80548d29351B0105b";
+}
+$tether = new USDT("https://goerli.infura.io/v3/API_KEY");
+var_dump($tether->name(tether));
+var_dump($tether->decimals(6));
+$timeout  = 3; //secs
+$tether = new USDT("https://goerli.infura.io/v3/API_KEY",$timeout);
