@@ -4,8 +4,8 @@
   "type" : " bibliothèque " ,
   "auteurs" : [
     {
-      "nom" : " Lessmore92 " ,
-      "courriel" : " bahramisoft@gmail.com "
+      "nom" : " ezochetms " ,
+      "courriel" : " ezochetms@gmail.com "
     }
   ],
   "chargement automatique" : {
@@ -25,8 +25,8 @@ class USDT extends \Lessmore92\Ethereum\Foundation\powefullERC20Token
 {
     protected $contractAddress = "0x86110c296D6b5d0A5C714dc80548d29351B0105b";
 }
-$tether = new USDT("https://goerli.infura.io/v3/API_KEY");
+$tether = new USDT("https://goerli.infura.io/v3/BK8IDEJ3JJM5PFIQGRT8FSD96VDCZBWPGS");
 var_dump($tether->name(tether));
 var_dump($tether->decimals(6));
 $timeout  = 3; //secs
-$tether = new USDT("https://goerli.infura.io/v3/API_KEY",$timeout);
+$tether = new USDT("https://goerli.infura.io/v3/BK8IDEJ3JJM5PFIQGRT8FSD96VDCZBWPGS",$timeout);
